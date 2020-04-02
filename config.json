@@ -1,0 +1,68 @@
+{
+    "local":{
+        "port": 4000,
+        "bcrypt": {
+            "salt" : 10
+        },
+        "jwt": {
+            "key": "dharmaKeys",
+            "algo": "HS256",
+            "expire": "24h"
+        },
+        "database": {
+            "host": "localhost",
+            "user": "root",
+            "password": "",
+            "db": "dharma",
+            "dialect": "mysql",
+            "pool": {
+                "max": 5,
+                "min": 0,
+                "acquire": 30000,
+                "idle": 10000
+            }
+        }
+    },
+    "uat": {
+        "port": 5000,
+        "jwt": {
+            "key": "dharma",
+            "algo": "HS256",
+            "expire": "24h"
+        },
+        "database": {
+            "host": "localhost",
+            "user": "root",
+            "password": "123456",
+            "db": "testdb",
+            "dialect": "mysql",
+            "pool": {
+                "max": 5,
+                "min": 0,
+                "acquire": 30000,
+                "idle": 10000
+            }
+        }
+    },
+    "live": {
+        "port": 6000,
+        "jwt": {
+            "key": "dharma",
+            "algo": "HS256",
+            "expire": "24h"
+        },
+        "database": {
+            "host": "localhost",
+            "user": "root",
+            "password": "123456",
+            "db": "testdb",
+            "dialect": "mysql",
+            "pool": {
+                "max": 5,
+                "min": 0,
+                "acquire": 30000,
+                "idle": 10000
+            }
+        }
+    }
+}
